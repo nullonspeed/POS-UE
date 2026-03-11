@@ -6,10 +6,23 @@
     "configurations": [
         {
             "type": "java",
-            "name": "isOdd",
+            "name": "fibocici",
             "request": "launch",
-            "mainClass": "isOdd",
+            "mainClass": "fibocici",
             "projectName": "POS UE_187b4e22"
         },
+        {
+            "type": "java",
+            "name": "fibocici",
+            "request": "launch",
+            "mainClass": "UE01.fibo.fibocici",
+            "projectName": "POS UE_187b4e22"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
     ]
 }
