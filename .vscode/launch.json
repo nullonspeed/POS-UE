@@ -4,20 +4,7 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        {
-            "type": "java",
-            "name": "fibocici",
-            "request": "launch",
-            "mainClass": "fibocici",
-            "projectName": "POS UE_187b4e22"
-        },
-        {
-            "type": "java",
-            "name": "fibocici",
-            "request": "launch",
-            "mainClass": "UE01.fibo.fibocici",
-            "projectName": "POS UE_187b4e22"
-        },
+        
         {
             "type": "java",
             "name": "Current File",
