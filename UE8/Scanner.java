@@ -46,19 +46,19 @@ public class Scanner {
         syLnr = chLnr;
         syCnr = chCnr;
         switch (ch) {
-            case EOF: sy = Symbol.EOF; break;
-            case ERROR: sy = Symbol.ERROR; break;
-            case '+': sy = Symbol.PLUS; break;
-            case '-': sy = Symbol.MINUS; break;
-            case '*': sy = Symbol.TIMES; break;
-            case '/': sy = Symbol.DIV; break;
-            case '(': sy = Symbol.OPEN_PAR; break;
-            case ')': sy = Symbol.CLOSE_PAR; break;
-            case '{': sy = Symbol.OPEN_BRACE; break;
-            case '}': sy = Symbol.CLOSE_BRACE; break;
-            case ',': sy = Symbol.COMA; break;
-            case '=': sy = Symbol.ASSIGN; break;
-            case ';': sy = Symbol.SEMICOLON; break;
+            case EOF: sy = Symbol.EOF; nextCh(); break;
+            case ERROR: sy = Symbol.ERROR;nextCh(); break;
+            case '+': sy = Symbol.PLUS;nextCh(); break;
+            case '-': sy = Symbol.MINUS; nextCh();break;
+            case '*': sy = Symbol.TIMES; nextCh();break;
+            case '/': sy = Symbol.DIV;nextCh(); break;
+            case '(': sy = Symbol.OPEN_PAR;nextCh(); break;
+            case ')': sy = Symbol.CLOSE_PAR;nextCh(); break;
+            case '{': sy = Symbol.OPEN_BRACE;nextCh(); break;
+            case '}': sy = Symbol.CLOSE_BRACE;nextCh(); break;
+            case ',': sy = Symbol.COMA;nextCh(); break;
+            case '=': sy = Symbol.ASSIGN; nextCh();break;
+            case ';': sy = Symbol.SEMICOLON;nextCh(); break;
             
                
         
@@ -87,7 +87,7 @@ public class Scanner {
                         nextCh();
                     }while(Character.isDigit(ch));
                     if( ch == ' '|| ch == ';'){
-                        sy = Symbol.Number;
+                        sy = Symbol.Number;;
                     }
                     else{
                         sy = Symbol.ERROR;

@@ -27,12 +27,16 @@ public class MiniJava {
         Scanner scanner = new Scanner(sourceFileReader);
 
         IO.print("select operation mode: parse, interpret");
+        IO.println();
         char mode = IO.readln().charAt(0);
         switch (mode) {
             case 'p':
                 
                 break;
             case 'i': break;
+            case 's': while(scanner.sy!=Symbol.EOF && scanner.sy != Symbol.ERROR)
+                scanner.nextSy();
+            IO.println("stage comp");break;
         
             default:
                 IO.println("invalid operation mode! error");
